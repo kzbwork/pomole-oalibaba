@@ -1,0 +1,57 @@
+{
+  "user":{
+    "key": "{uid}",
+    "schema":{
+      "uid"             :{"index": true,"type": "Number","unique": true},
+      "accType"         :{"type": "String", "default": "imei", "desc": "账号登录方式，可选值为 normal"},
+      "credit"          :{"type": "Number", "default": 0, "desc": "货币"},
+      "accId"           :{"type": "String", "default": "", "desc": "用户识别 id"},
+      "registerTime"    :{"type": "Date", "desc": "用户注册时间"},
+      "lastLoginTime"   :{"type": "Date", "desc": "用户最后一次登录的时间"},
+      "reconnectTheme"  :{"type": "String", "desc": "玩家断线时，未展示结果的主题名称"},
+      "reconnectData"   :{"type": "Mixed", "desc": "玩家最后一次 spin 的返回结果"}
+    }
+  },
+  "id": {
+    "key": "{name}",
+    "schema": {
+      "name"           :{"default": 0, "type":"String", "index": true, "unique": true, "desc": "自增id的名字"},
+      "id"             :{"default": 0, "type":"Number", "desc": "现在的id是多少"}
+    }
+  },
+  "alibabaTheme": {
+    "key": "{uid}",
+    "schema": {
+      "uid":                    {"index": true, "type": "Number", "desc": "玩家 id"},
+      "roundId":                {"type": "Number", "desc": "当前轮次id"},
+      "coinValue":              {"type": "Number", "desc": "spin 的倍率"},
+      "multiplier":             {"type": "Number", "desc": "游戏币对应价值"},
+      "removeFreeTimes":        {"type": "Number", "desc": "玩家剩余的消除 free 次数"},
+      "removeFreeWin":          {"type": "Number", "desc": "玩家消除 free 当前赢的总钱数"},
+      "miniGame":               {"type": "Boolean", "desc": "是否有未完成的小游戏"},
+      "miniConfig":             {"type": "[Number]", "desc": "小游戏的配置"},
+      "miniLife":               {"type": "Number", "desc": "剩余的生命值"},
+      "miniWin":                {"type": "Number", "desc": "积累的奖励"},
+      "miniMultiple":           {"type": "Number", "desc": "翻倍的最大数量"},
+      "miniHistory":            {"type": "[Number]", "desc": "已经选过的罐子序号"}
+    }
+  },
+  "spinRecord": {
+    "key": "{uid}{roundId}",
+    "schema": {
+      "roundId":                {"index": true, "type": "Number", "desc": "一次 spin 的 id"},
+      "uid":                    {"index": true, "type": "Number", "desc": "玩家 id"},
+      "gameId":                 {"type": "String", "desc": "玩法 id"},
+      "status":                 {"type": "Number", "desc": "该局的状态，0 表示spin未确认，1 表示spin已确认，2 表示spin撤销"},
+      "time":                   {"index": true, "type": "Number", "desc": "记录时间"},
+      "type":                   {"type": "Number", "desc": "spin 类型，0 表示普通 spin，1 表示 free spin"},
+      "bet":                    {"type": "Number", "desc": "总投注数"},
+      "result":                 {"type": "Number", "desc": "赢钱数"},
+      "bonusResult":            {"type": "Number", "desc": "小游戏赢钱数"},
+      "betTransactionId":       {"type": "String", "desc": "下注的变化 id"},
+      "resultTransactionId":    {"type": "String", "desc": "结果的变化 id"},
+      "bonusTransactionId":     {"type": "String", "desc": "小游戏的变化 id"}
+    }
+  }
+}
+

@@ -1,0 +1,12 @@
+{
+  "tokenValidTime": 2592000,
+  "roomLifeTimeout": 3600,
+  "smsVerifyCodeTimeout": 600,
+  "mailLifeTime": 2592000000,
+  "nameMaxLength": 14,
+  "kickTime": 3600,
+  "offlineDeleteTime": 3600,
+  "minNormalPayTimes": 8,
+
+  "originCredit": 8000
+}

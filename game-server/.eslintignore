@@ -1,0 +1,6 @@
+node_modules/*
+*/node_modules/*
+coverage/*
+app/servers/http/public/*
+test/*
+# scripts/*

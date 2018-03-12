@@ -1,0 +1,160 @@
+{
+  "appenders": [
+    {
+      "type": "console"
+    },
+    {
+      "type": "file",
+      "filename": "${opts:base}/logs/con-log-${opts:serverId}.log",
+      "pattern": "connector",
+      "maxLogSize": 104857600,
+      "layout": {
+        "type": "basic"
+      },
+      "backups": 5,
+      "category": "con-log"
+    },
+    {
+      "type": "dateFile",
+      "filename": "${opts:base}/logs/rpc-log-${opts:serverId}",
+      "pattern": "-yyyy-MM-dd.log",
+      "alwaysIncludePattern":true,
+      "maxLogSize": 104857600,
+      "layout": {
+        "type": "basic"
+      },
+      "backups": 14,
+      "category": "rpc-log"
+    },
+    {
+      "type": "dateFile",
+      "filename": "${opts:base}/logs/forward-log-${opts:serverId}",
+      "pattern": "-yyyy-MM-dd.log",
+      "alwaysIncludePattern":true,
+      "maxLogSize": 104857600,
+      "layout": {
+        "type": "basic"
+      },
+      "backups": 14,
+      "category": "forward-log"
+    },
+    {
+      "type": "file",
+      "filename": "${opts:base}/logs/crash.log",
+      "maxLogSize": 104857600,
+      "layout": {
+        "type": "basic"
+      },
+      "backups": 5,
+      "category":"crash-log"
+    },
+    {
+      "type": "file",
+      "filename": "${opts:base}/logs/admin.log",
+      "maxLogSize": 104857600,
+      "layout": {
+          "type": "basic"
+        }
+      ,"backups": 5,
+      "category":"admin-log"
+    },
+    {
+      "type": "dateFile",
+      "filename": "${opts:base}/logs/pomelo-${opts:serverId}",
+      "maxLogSize": 104857600,
+      "pattern": "-yyyy-MM-dd.log",
+      "alwaysIncludePattern":true,
+      "layout": {
+        "type": "basic"
+      },
+      "backups": 30,
+      "category":"pomelo"
+    },
+    {
+      "type": "file",
+      "filename": "${opts:base}/logs/pomelo-admin.log",
+      "maxLogSize": 104857600,
+      "layout": {
+          "type": "basic"
+        }
+      ,"backups": 5,
+      "category":"pomelo-admin"
+    },
+    {
+      "type": "dateFile",
+      "filename": "${opts:base}/logs/game-log-${opts:serverId}",
+      "maxLogSize": 104857600,
+      "pattern": "-yyyy-MM-dd.log",
+      "alwaysIncludePattern":true,
+      "layout": {
+        "type": "basic"
+      },
+      "backups": 30,
+      "category":"game-log"
+    },
+    {
+      "type": "dateFile",
+      "filename": "${opts:base}/logs/sync-log",
+      "maxLogSize": 104857600,
+      "pattern": "-yyyy-MM-dd.log",
+      "alwaysIncludePattern":true,
+      "layout": {
+        "type": "basic"
+      },
+      "backups": 30,
+      "category":"sync-log"
+    },
+    {
+      "type": "dateFile",
+      "filename": "${opts:base}/logs/opt-log-${opts:serverId}",
+      "maxLogSize": 104857600,
+      "pattern": "-yyyy-MM-dd.log",
+      "alwaysIncludePattern":true,
+      "layout": {
+        "type": "basic"
+      },
+      "backups": 30,
+      "category":"opt-log"
+    },
+    {
+      "type": "dateFile",
+      "filename": "${opts:base}/logs/wallet-log",
+      "maxLogSize": 104857600,
+      "pattern": "-yyyy-MM-dd.log",
+      "alwaysIncludePattern":true,
+      "layout": {
+        "type": "basic"
+      },
+      "backups": 30,
+      "category":"wallet-log"
+    },
+    {
+      "type": "dateFile",
+      "filename": "${opts:base}/logs/dataCenter-log-${opts:serverId}",
+      "maxLogSize": 104857600,
+      "pattern": "-yyyy-MM-dd.log",
+      "alwaysIncludePattern":true,
+      "layout": {
+        "type": "basic"
+      },
+      "backups": 30,
+      "category":"dataCenter-log"
+    }
+  ],
+
+  "levels": {
+    "rpc-log" : "WARN",
+    "forward-log": "WARN",
+    "con-log": "WARN",
+    "pomelo": "WARN",
+    "game-log": "INFO",
+    "wallet-log": "WARN",
+    "dataCenter-log": "INFO",
+    "sync-log": "INFO"
+  },
+
+  "replaceConsole": true,
+  "rawMessage": true,
+  "lineDebug": true,
+  "reloadSecs": 60
+}

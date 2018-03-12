@@ -1,0 +1,7 @@
+<%
+let result = {};
+for (let obj of data) {
+    result[obj.eliminate] = obj.time;
+}
+%>
+<%- JSON.stringify(result, null, 2); %>

@@ -1,0 +1,62 @@
+{
+  "development":{
+    "expire": 3600,
+    "redis": {"host":"127.0.0.1","port":6379,"options":{}},
+    "mongo": "mongodb://slots:slots@192.168.2.12:27017/slots",
+    "oracle": {
+      "user": "system",
+      "pwd": "slots",
+      "connectString": "192.168.2.12:1521/slots",
+      "interval": 30000,
+      "maxUpdateTimes": 1000
+    },
+    "interval": 30000,
+    "maxData": 1000
+  },
+
+  "localtest":{
+    "expire": 3600,
+    "redis": {"host":"127.0.0.1","port":6379,"options":{"password":"123"}},
+    "mongo": "mongodb://slots:slots@127.0.0.1:27017/slots",
+    "interval": 30000,
+    "maxData": 1000
+  },
+
+  "remotetest":{
+    "expire": 3600,
+    "redis": {"host":"127.0.0.1","port":6379,"options":{}},
+    "mongo": "mongodb://slots:9EzF7rNrSgU3@127.0.0.1:27017/slots",
+    "oracle": {
+      "user": "system",
+      "pwd": "slots",
+      "connectString": "127.0.0.1:1521/slots",
+      "interval": 30000,
+      "maxUpdateTimes": 1000
+    },
+    "interval": 30000,
+    "maxData": 1000
+  },
+
+  "tokyo":{
+    "expire": 3600,
+    "redis": {"host":"127.0.0.1","port":6379,"options":{"password":"gf92yvjnbb2U"}},
+    "mongo": "mongodb://slots:9EzF7rNrSgU3@127.0.0.1:27017/slots",
+    "interval": 30000,
+    "maxData": 1000
+  },
+
+  "production":{
+    "expire": 3600,
+    "redis": {"host":"127.0.0.1","port":6379,"options":{"password":"gf92yvjnbb2U"}},
+    "mongo": "mongodb://slots:slots@127.0.0.1:27017/slots",
+    "oracle": {
+      "user": "system",
+      "pwd": "slots",
+      "connectString": "slots",
+      "interval": 30000,
+      "maxUpdateTimes": 1000
+    },
+    "interval": 30000,
+    "maxData": 1000
+  }
+}

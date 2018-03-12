@@ -1,0 +1,10 @@
+{
+  "nThreads":100,
+  "fileSizeMB":1,
+  "sleepMicros":1,
+  "mmf":true,
+  "r":true,
+  "w":true,
+  "recSizeKB":10,
+  "syncDelay":1
+}

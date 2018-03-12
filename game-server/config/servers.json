@@ -1,0 +1,81 @@
+{
+  "development":{
+    "game":[
+      {"id": "game-server-1","host":"192.168.2.26", "port":3321, "args":""},
+      {"id": "game-server-2","host":"192.168.2.26", "port":3322, "args":""},
+      {"id": "game-server-3","host":"192.168.2.26", "port":3323, "args":""}
+    ],
+    "dataCenter": [
+      {"id": "dataCenter-server-1", "host": "192.168.2.26", "port": 3331, "args": ""}
+    ],
+    "connector": [
+      {"id": "connector-server-1", "host": "192.168.2.26", "port": 3311, "clientHost": "192.168.2.26", "clientPort": 3201, "frontend": true, "useSSL": false, "args":""}
+    ],
+    "http":[
+      {"id": "http-server-1","host":"192.168.2.26", "clientHost": "192.168.2.26", "httpPort": 3001, "useSSL": false, "crt": "config/ssl/dolphin.crt", "key": "config/ssl/dolphin.key", "passwd": "", "args":""}
+    ],
+    "gate":[
+      {"id": "gate-server-1","host":"192.168.2.26", "clientHost": "192.168.2.26", "httpPort": 3101, "useSSL": false, "crt": "config/ssl/dolphin.crt", "key": "config/ssl/dolphin.key", "passwd": "", "args":""}
+    ]
+  },
+  "localtest":{
+    "game":[
+      {"id": "game-server-1","host":"127.0.0.1", "port":3321}
+    ],
+    "connector": [
+      {"id": "connector-server-1", "host": "127.0.0.1", "port": 3311, "clientHost": "192.168.2.26", "clientPort": 3201, "frontend": true, "useSSL": false},
+      {"id": "connector-server-2", "host": "127.0.0.1", "port": 3312, "clientHost": "192.168.2.26", "clientPort": 3202, "frontend": true, "useSSL": false}
+    ],
+    "http":[
+      {"id": "http-server-1","host":"127.0.0.1", "clientHost": "slots.game.com", "httpPort": 3001, "useSSL": false}
+    ],
+    "gate":[
+      {"id": "gate-server-1","host":"127.0.0.1", "clientHost": "slots.game.com", "httpPort": 3101, "useSSL": false}
+    ]
+  },
+  "remotetest":{
+    "game":[
+      {"id": "game-server-1","host":"127.0.0.1", "port":3321}
+    ],
+    "connector": [
+      {"id": "connector-server-1", "host": "127.0.0.1", "port": 3311, "clientHost": "106.14.227.100", "clientPort": 3201, "frontend": true, "useSSL": false},
+      {"id": "connector-server-2", "host": "127.0.0.1", "port": 3312, "clientHost": "106.14.227.100", "clientPort": 3202, "frontend": true, "useSSL": false}
+    ],
+    "http":[
+      {"id": "http-server-1","host":"127.0.0.1", "clientHost": "106.14.227.100", "httpPort": 3001, "useSSL": false}
+    ],
+    "gate":[
+      {"id": "gate-server-1","host":"127.0.0.1", "clientHost": "106.14.227.100", "httpPort": 3101, "useSSL": false}
+    ]
+  },
+  "tokyo":{
+    "game":[
+      {"id": "game-server-1","host":"127.0.0.1", "port":3321}
+    ],
+    "connector": [
+      {"id": "connector-server-1", "host": "127.0.0.1", "port": 3311, "clientHost": "47.74.19.132", "clientPort": 3201, "frontend": true, "useSSL": false},
+      {"id": "connector-server-2", "host": "127.0.0.1", "port": 3312, "clientHost": "47.74.19.132", "clientPort": 3202, "frontend": true, "useSSL": false}
+    ],
+    "http":[
+      {"id": "http-server-1","host":"127.0.0.1", "clientHost": "47.74.19.132", "httpPort": 3001, "useSSL": false}
+    ],
+    "gate":[
+      {"id": "gate-server-1","host":"127.0.0.1", "clientHost": "47.74.19.132", "httpPort": 3101, "useSSL": false}
+    ]
+  },
+  "production":{
+    "game":[
+      {"id": "game-server-1","host":"127.0.0.1", "port":3321}
+    ],
+    "connector": [
+      {"id": "connector-server-1", "host": "127.0.0.1", "port": 3311, "clientHost": "101.132.146.107", "clientPort": 3201, "frontend": true, "useSSL": false},
+      {"id": "connector-server-2", "host": "127.0.0.1", "port": 3312, "clientHost": "101.132.146.107", "clientPort": 3202, "frontend": true, "useSSL": false}
+    ],
+    "http":[
+      {"id": "http-server-1","host":"127.0.0.1", "clientHost": "game.huanleqp.net", "httpPort": 3001, "useSSL": false, "cert": "config/ssl/dolphingame.crt", "key": "config/ssl/dolphingame.key", "passwd": ""}
+    ],
+    "gate":[
+      {"id": "gate-server-1","host":"127.0.0.1", "clientHost": "game.huanleqp.net", "httpPort": 3101, "useSSL": false, "cert": "config/ssl/dolphingame.crt", "key": "config/ssl/dolphingame.key", "passwd": ""}
+    ]
+  }
+}

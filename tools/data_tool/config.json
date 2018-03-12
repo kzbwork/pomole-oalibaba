@@ -1,0 +1,16 @@
+{
+  "server":
+  [
+    {
+      "xlsxfile": "10001.xlsx",
+      "savefile": "alibaba.json",
+      "sheets": ["base", "element", "line", "coinvalue"
+        , "multiplier", "reward", "freespin"
+        , "basespin", "rewardfreespin", "bonustype", "bonus", "freetest", "bonustest"],
+      "templates": ["alibaba/base.ejs", "alibaba/element.ejs", "alibaba/line.ejs", "alibaba/coinValue.ejs"
+        , "alibaba/multiplier.ejs", "alibaba/reward.ejs", "alibaba/freespin.ejs"
+        , "alibaba/baseSpin.ejs", "alibaba/rewardFreeSpin.ejs", "alibaba/bonusType.ejs", "alibaba/bonus.ejs"
+        , "alibaba/baseSpin.ejs", "alibaba/baseSpin.ejs"]
+    }
+  ]
+}

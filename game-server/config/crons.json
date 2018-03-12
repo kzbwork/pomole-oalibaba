@@ -1,0 +1,22 @@
+{
+  "development":{
+    "dataCenter": [
+      {"id": 1, "time": "0 * * * * *", "action": "checkAliveCron.checkUserAlive"}
+    ]
+  },
+  "localtest":{
+    "dataCenter": [
+      {"id": 1, "time": "0 * * * * *", "action": "checkAliveCron.checkUserAlive"}
+    ]
+  },
+  "remotetest":{
+    "dataCenter": [
+      {"id": 1, "time": "0 * * * * *", "action": "checkAliveCron.checkUserAlive"}
+    ]
+  },
+  "production":{
+    "dataCenter": [
+      {"id": 1, "time": "0 * * * * *", "action": "checkAliveCron.checkUserAlive"}
+    ]
+  }
+}

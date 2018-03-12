@@ -1,0 +1,8 @@
+<%
+let result = {};
+for (let obj of data) {
+    result[obj.type] = result[obj.type] || [];
+    result[obj.type].push(obj.id);
+}
+%>
+<%- JSON.stringify(result, null, 2); %>

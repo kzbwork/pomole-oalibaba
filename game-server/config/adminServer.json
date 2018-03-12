@@ -1,0 +1,22 @@
+[
+  {
+    "type": "connector",
+    "token": "agarxhqb98rpajloaxn34ga8asdfruxnpaagl29w4rxn"
+  },
+  {
+    "type": "http",
+    "token": "agarxhqasdfasdfoaxn34ga8xrunpagkjwlaw3ruxnpaagl29w4rxn"
+  },
+  {
+    "type": "game",
+    "token": "agarxasdfaagl29w4rxn"
+  },
+  {
+    "type": "gate",
+    "token": "agarxhqb98rpajloaxn34ga8xrunpagkjwlaw3ruxnpaasddfw4rxn"
+  },
+  {
+    "type": "dataCenter",
+    "token": "111"
+  }
+]

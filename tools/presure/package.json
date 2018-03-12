@@ -1,0 +1,18 @@
+{
+  "name": "slots_presure",
+  "version": "0.0.1",
+  "description": "slots压测工具",
+  "main": "presure.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^2.2.0",
+    "pomelo-protobuf": "^0.4.0",
+    "pomelo-protocol": "^0.1.6",
+    "pomelo-robot": "^0.1.4",
+    "ws": "^1.1.1"
+  }
+}

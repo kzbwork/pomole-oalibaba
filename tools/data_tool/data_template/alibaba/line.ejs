@@ -1,0 +1,10 @@
+[
+<% for(var i=0; i<data.length; ++i) { %>
+<% var item = "["+data[i].line.replace(/\|/g,"],[")+"]";%>
+<% if (i == data.length-1){ _%>
+[<%- item %>]
+<% }else {%>
+[<%- item %>],
+<% } %>
+<% } %>
+]

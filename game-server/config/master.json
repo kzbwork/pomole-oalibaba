@@ -1,0 +1,17 @@
+{
+  "development": {
+    "id": "master-server-1", "host": "192.168.2.26", "port": 3005
+  },
+  "localtest": {
+    "id": "master-server-1", "host": "127.0.0.1", "port": 3005
+  },
+  "remotetest": {
+    "id": "master-server-1", "host": "127.0.0.1", "port": 3005
+  },
+  "tokyo": {
+    "id": "master-server-1", "host": "127.0.0.1", "port": 3005
+  },
+  "production": {
+    "id": "master-server-1", "host": "127.0.0.1", "port": 3005
+  }
+}

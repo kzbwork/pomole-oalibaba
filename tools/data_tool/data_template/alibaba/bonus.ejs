@@ -1,0 +1,13 @@
+<%
+let result = [];
+for (let obj of data) {
+  let value = [];
+  for (let i = 1; i < Object.keys(obj).length; ++i) {
+    if (obj[`data${i}`]) {
+      value.push(obj[`data${i}`]);
+    }
+  }
+  result.push(value);
+}
+%>
+<%- JSON.stringify(result, null, 2); %>

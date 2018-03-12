@@ -1,0 +1,11 @@
+<%
+let result = [];
+for (let obj of data) {
+    result.push({
+        elem: obj.elem,
+        num: obj.num,
+        mult: obj.mult
+    });
+}
+%>
+<%- JSON.stringify(result, null, 2); %>

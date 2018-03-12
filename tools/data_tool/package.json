@@ -1,0 +1,16 @@
+{
+  "name": "tools",
+  "version": "1.0.0",
+  "description": "slots转换数据的程序",
+  "main": "convert_xlsx.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "peter",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^2.11.0",
+    "ejs": "^2.4.1",
+    "node-xlsx": "^0.6.0"
+  }
+}
